@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form__container {
+        @apply block p-6 rounded-lg shadow-lg bg-white max-w-lg mx-auto mt-24;
+    }
+    
+    .form__div {
+        @apply mb-6 my-6;
+    }
+    
+    .test {
+        @apply text-red-500;
+    }
+    
+    .form__input {
+        @apply 
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+
+    .form__msg__input {
+        @apply block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+    
+    .form__button {
+        @apply w-full
+        px-6
+        py-2.5
+        bg-white
+        text-cta
+        border-cta
+        font-medium
+        text-xs
+        leading-tight
+        uppercase
+        rounded 
+        shadow-md
+        hover:bg-cta hover:shadow-lg hover:text-white
+        transition
+        duration-150
+        disabled:opacity-60 disabled:text-gray-400 disabled:hover:bg-white
+        ease-in-out;
+    }
+    
+    .valid {
+        @apply text-green-600 ;
+    }
+    
+    .invalid {
+        @apply text-red-600 ;
+    }
+    
+    .instructions {
+        @apply text-sm rounded bg-secondary text-white mt-2 p-2;
+    }
+    
+    .error {
+        @apply bg-red-300 text-red-600 text-xl text-center rounded p-2 mb-3;
+    }
+
+    /* Card */
+    .card__div {
+        @apply flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg;
+    }
+    
+    .card__img {
+        @apply w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg;
+    }
+    
+    .card__heading {
+        @apply text-2xl font-medium leading-tight text-gray-800 mb-2.5;
+    }
+
+    .card__badge {
+        @apply inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-primary text-white rounded text-sm ml-2;
+    }
+
+    .card__button {
+        @apply inline-block px-3 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-cyan-500 hover:shadow-lg focus:bg-cyan-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-800 active:shadow-lg transition duration-150 ease-in-out mt-5 ;
+    }
+
+
+
+    /* Appointment and Pres */
+    .appointement__select {
+        @apply form-select appearance-none
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding bg-no-repeat
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none
+    }
+    
+    .appointment__msg__input {
+        @apply
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+    
+    .appointment__msg__label {
+        @apply inline-block mb-2 text-gray-700;
+    }
+
+}

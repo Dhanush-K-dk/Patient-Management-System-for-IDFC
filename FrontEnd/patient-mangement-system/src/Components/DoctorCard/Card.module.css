@@ -1,0 +1,11 @@
+.card__div {
+    @apply flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg;
+}
+
+.card__img {
+    @apply w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg;
+}
+
+.card__heading {
+    @apply text-2xl font-medium leading-tight text-gray-800 mb-2.5;
+}

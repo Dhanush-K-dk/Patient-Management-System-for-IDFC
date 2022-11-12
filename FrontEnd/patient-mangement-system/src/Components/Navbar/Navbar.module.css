@@ -1,0 +1,37 @@
+.nav__container{
+    @apply p-3 bg-white;
+}
+
+.nav__div__container{
+    /* @apply container flex flex-wrap justify-between items-center w-auto h-auto ; */
+    @apply overflow-hidden text-center;
+}
+
+.nav__img {
+    @apply mr-3 h-6 sm:h-10 ;
+}
+
+.nav__img__txt { 
+    @apply self-center text-3xl font-semibold whitespace-nowrap text-third;
+}
+
+.nav__left {
+    @apply flex items-center float-left text-center p-3 m-1;
+}
+
+.nav__right {
+    /* @apply w-full md:block md:w-auto; */
+    @apply float-right text-center;
+}
+
+.nav__ul {
+    @apply flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent p-5;
+}
+
+.nav__li {
+    @apply block py-2 pr-4 pl-3 text-third rounded hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:dark:hover:bg-transparent text-lg m-1;
+}
+
+.nav__button {
+    @apply inline-block px-6 py-2 border-2 border-cta text-cta font-medium text-sm leading-tight uppercase rounded hover:bg-cta hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out;
+}   
